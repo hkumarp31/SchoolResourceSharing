@@ -1,0 +1,38 @@
+<% for(var i=0;i<bookingpostmodel.length;i++) {%> 
+	<div id="bodySection" class="container-fluid" style="padding: 30px">
+			<div class="form-group" id="post-head-view">
+		    		<h2><%= bookingpostmodel[i].title %></h2><br> <h4>Post ID :&nbsp&nbsp<label for="comment"><%= bookingpostmodel[i].postid %></label></h4>
+		    	</div>
+
+		    	<div class="row" id="post-capacity-view">
+		    		<h3 id="Capacity"style="margin-right: 10px"> Their Target Estimation of Student : <%= bookingpostmodel[i].yourrange %> students </h3>
+		    	</div><br>
+		    	<div class="form-group" id="post-dateschedule-view">
+		    	<h2> Date Schedule : (yyyy/mm/dd) <br><br>
+		    		<h3> 
+		    		From Date : 
+		    		</h3>
+		    		<h4>
+		    		<%= bookingpostmodel[i].fromdate %>
+		    		</h4> <br>
+
+		    		<h3> 
+		    		To Date : 
+		    		</h3>
+		    		<h4>
+		    		<%= bookingpostmodel[i].todate %>
+		    		</h4> <br>
+		    	</h2>
+		    	</div><br>
+		    	<div class="row" id="post-short-description-view">
+		    		<h5 id="post-short-description-body-view">
+		    			<p><%= bookingpostmodel[i].purpose %></p>
+		    		</h5>
+		    	</div><br>
+		    	<div class="row" id="post-buttons-view">
+		    		<a href="/admin/booking" class="btn btn-success">ACCEPT PERMISSION</a>
+		    		<a href="/admin/post" class="btn btn-danger">REJECT PERMISSION</a>
+			   	</div><br>
+		</div>
+		<br>
+<% } %>

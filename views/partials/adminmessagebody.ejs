@@ -1,0 +1,16 @@
+<% for(var i=0;i<contactusmodel.length;i++) {%> 
+	<div id="bodySection" class="container-fluid" style="padding: 30px">
+			<div class="row">
+				<label><h6>Name :<%= contactusmodel[i].name %></label></h6>
+			</div><br>
+			<div class="row">
+				<label><h6>Contact Address :<%= contactusmodel[i].email %></label></h6>
+			</div><br>
+			<div class="row">
+				<label><h6>Message :<%= contactusmodel[i].textmessage %></label>
+				</h6>
+			</div><br>
+		</div>
+		<br>
+
+<% } %>

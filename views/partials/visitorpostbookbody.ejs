@@ -1,0 +1,27 @@
+<div id="bodySection" class="container-fluid" style="padding: 30px">
+    <form action="/booking" method="POST">
+
+          <div class="form-group">
+          <input type="text" id="title" name="title" value="<%= adminaddpostmodel.title%>" readonly="readonly"/>
+          <input type="text" id="postid" name="postid" value="<%= adminaddpostmodel._id%>" readonly="readonly"/>
+          </div>
+
+          <h6>Image</h6>
+          <img src="G:\sample\backgroundImage.jpeg" height=250px width=250px></img>
+          <br><br>
+          
+          <div class="form-group">
+              
+              <h5>Capacity : <%= adminaddpostmodel.selectrange%>  Students</h5><br><br>
+              <h5>Your Student Estimation : </h5><input type="text" class="form-control" id="yourrange" name="yourrange">
+              <h5>Select Your Date (month/date/year : Eg: 06/06/2006) </h5><h5>From :  <input type="date" id="fromdate" name="fromdate" value=""> to : <input type="date" id="todate" name="todate" value=""></h5>
+
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="comment"><h5>Complete Purpose</h5></label>
+              <textarea class="form-control" rows="5" id="purpose" name="purpose" value="Enter Your Purpose"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">REQUEST PERMISSION</button>
+    </form>
+</div>

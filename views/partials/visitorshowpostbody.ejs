@@ -1,0 +1,47 @@
+<div class="row" id="post-head-view">
+		    		<h2><%= adminaddpostmodel.title %></h2>
+		    	</div><br>
+
+				<div class="row" id="post-check-available-view">
+		    		<label for="comment"><h5><%= adminaddpostmodel.availability %></h5></label>
+		    	</div><br>
+
+		    	<div class="row" id="post-body-image-view">
+		    		<img src="G:\sample\backgroundImage.jpeg" id="post-image-view" height="200px" width="200px"></img>
+		    	</div><br>
+		    	<div class="row" id="post-capacity-view">
+		    		<h3 id="Capacity"style="margin-right: 10px"> Capacity : <%= adminaddpostmodel.selectrange %> students </h3>
+		    	</div><br>
+		    	<div class="row" id="post-facility-view">
+		    	<h2> Facilities Provided :
+		    		<h3> 
+		    		<p id="AC" style="margin-right: 10px">
+		    			<%
+		    			if(adminaddpostmodel.ac==true) {%>
+		    			AC Facility
+		    			<%} %></p>
+		    		<p id="watersupply" style="margin-right: 10px"> 
+		    		<%
+		    			if(adminaddpostmodel.watersupply==true) {%>
+		    			Water Supply Facility
+		    			<%} %>
+		    		</p>
+		    		<p id="stage" style="margin-right: 10px"> <%
+		    			if(adminaddpostmodel.stage==true) {%>
+		    			Stage
+		    			<%} %> </p>
+		    		<p id="projector" style="margin-right: 10px"> <%
+		    			if(adminaddpostmodel.projector==true) {%>
+		    			Projector Facility
+		    			<%} %> </p>
+		    			</h3>
+		    	</h2>
+		    	</div><br>
+		    	<div class="row" id="post-short-description-view">
+		    		<h7 id="post-short-description-body-view">
+		    			<p><%= adminaddpostmodel.description %></p>
+		    		</h7>
+		    	</div><br>
+		    	<div class="row" id="post-buttons-view">
+		    		<a href="/visitor/post/<%=adminaddpostmodel._id%>/booking" class="btn btn-primary">BOOK NOW</a>
+			   	</div><br>

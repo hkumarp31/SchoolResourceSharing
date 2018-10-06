@@ -1,0 +1,19 @@
+	<% for(var i=0;i<adminaddpostmodel.length;i++) {%> 
+	<div class="row" id="post-main-body" >
+	    <div class="col-sm-4" id="post-body-image">
+	        <img src="G:\sample\backgroundImage.jpeg" height=250px width=250px></img>
+	    </div>
+	    <div class="col-sm-8" id="post-body-details">
+			<div class="row" id="post-head">
+			   	<%=adminaddpostmodel[i].title%>
+			</div>
+			<div class="row" id="post-short-description">
+			<%=adminaddpostmodel[i].description%>
+			</div>
+			<div class="row" id="post-view-more-details">
+			<a href="/admin/post/<%=adminaddpostmodel[i]._id%>" class="btn btn-primary">View More Info.</a>
+			
+			</div>
+		</div>
+	</div> 
+	<% } %>

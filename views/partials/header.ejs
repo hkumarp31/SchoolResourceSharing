@@ -1,0 +1,33 @@
+<div id="header" class="container-fluid">
+			<div id="homePageHead" class="row">
+
+					<div id="headWebTitle" class="col">
+						<h1 id="head1">Resource</h1>
+						<h1 id="head2">Sharing</h1>
+					</div>
+					<div id="enterRegister" class="col">
+						
+						
+						<a href="/admin/new" class="btn btn-primary" id="loggedin">ADMIN</a>
+						<% if(!currentUser){ %>
+						
+						<a href="/visitor/loginform" class="btn btn-primary" id="loggedin">Login In</a>
+						<a href="/visitor/registration" class="btn btn-primary" id="register">Register</a>
+						<% } 
+						else { %>
+						<a href="#" id="loggedin" ><%= currentUser.username%></a>
+						<a href="/logout" class="btn btn-primary" id="loggedin">Logout</a>
+						<% } %>
+					</div>
+			</div>
+			<br>
+			<div class="row" id="Nav">
+					<ul>
+						<li><a href="/">HOME</a></li>
+						<li><a href="/visitor/post">POST</a></li>
+						<li>RESOURCES</li>
+						<li><a href="/visitor/contactus">ABOUT</a></li>
+						<li><a href="/visitor/contactus">CONTACT US</a></li>
+					</ul>
+			</div>
+</div>

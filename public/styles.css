@@ -1,0 +1,207 @@
+body{
+			margin:9px;
+			background-image:url("images/backgroundImage.jpeg");
+			background-repeat:no-repeat;
+		   	background-size: cover;
+		   	height: 100%;
+	}
+
+		#header{
+		   		background-color: rgba(238,238,238,.8);
+		   		border-radius: 20px;
+		   		border-style: outset;
+		   		border-width: 5px;
+		   		border-color: #c6e2ff;
+		   		background-repeat:no-repeat;
+		   		background-size:cover;
+		   		margin-top: 50px;
+		   		overflow: hidden;
+		   	}
+		#bodySection{
+		   		background-color: rgba(238,238,238, .8);
+		   		border-radius: 20px;
+		   		border-style: outset;
+		   		border-width: 5px;
+		   		border-color: #c6e2ff;
+		   		background-repeat:no-repeat;
+		   		background-size:cover;
+		   		overflow: hidden;
+		   	}
+		#footer{
+		   		background-color: rgba(238,238,238, .8);
+		   		border-radius: 20px;
+		   		border-style: outset;
+		   		border-width: 5px;
+		   		border-color: #c6e2ff;
+		   		background-repeat:no-repeat;
+		   		background-size:cover;
+		   		overflow: hidden;
+		   		height: 50%;
+		   	}
+		   
+		 #headWebTitle{
+		 		margin-top: 20px;
+		 		float: left;
+				font-family:Montserrat;
+		 	}
+		#head1{
+				font-size:35px;
+				color:rgb(177,177,177);
+			}
+		#head2{
+				font-size:30px;
+				color:orange;
+			}
+
+		#enterRegister{
+				margin-top: 20px;
+				float: right;
+							
+				}
+		#loggedin{
+				float: right;
+				border:1px solid rgb(44,60,254) ;
+				border-radius:8%;
+				cursor:pointer;
+				font-size:16;
+				padding:8px;
+				background-color:white;
+				color:rgb(44,60,254);
+			}
+		#register{
+				float: right;
+				border:none;
+				padding:8px;
+				background-color:rgb(44,60,254);
+				color:white;
+				border-radius:8%;
+				cursor:pointer;
+				font-size:16;
+				margin-right: 10px;
+			}
+		#loggedin:hover{
+				background-color:rgb(44,60,254);
+				color:white;
+			}
+		#register:hover{
+				background-color:rgb(126,136,254);
+			}
+		#Nav ul{
+				margin-top:50px; 
+				list-style-type:none;
+			}
+		#Nav ul li{
+				float:left;
+				margin-left:30px;
+				margin-right:50px;
+				color:rgb(107,107,107);
+				font-family:Work Sans;
+				cursor:pointer;
+			}
+		#Nav ul li:hover{
+				color:orange;
+			}
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: none;
+		    min-width: 160px;
+		    overflow: auto;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  	background-color: 
+		    z-index: 1;
+		}
+
+		.dropdown-content a {
+			background-color:  rgba(238,238,238, .6);
+		    color:black;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		}
+		.dropdown-content a:hover{
+			background-color: yellow;
+			color:orange;
+			}
+		.show{
+			display: block;
+		}
+		#registrationFormID{
+			text-align: center;
+			padding: 50px;
+			
+			}
+		#loginFormID{
+			text-align: center;
+			padding: 50px;
+			
+			}
+		p{
+			
+			margin:auto;
+			display: block;
+		}
+		
+	input[type=text] {
+		margin-bottom: 20px;
+		width: 50%;
+		height: 6%;
+    	border: 2px solid green;
+   	 	border-radius: 4px;
+   	 	padding-left: 20px;
+	}
+	input[type=submit]{
+		margin-bottom: 20px;
+		width: 20%;
+		background-color: green;
+   	 	border-radius: 4px;
+   	 	height: 8%;
+	}
+	textarea[id=contactMessage] {
+		margin-bottom: 20px;
+		width: 50%;
+		height: 30%;
+    	border: 2px solid green;
+   	 	border-radius: 4px;
+   	 	padding-left: 20px;
+	}
+	#post-main-body{
+			padding: 20px;
+	}
+	#post-body-image{
+				border-radius: 20px;
+		   		border-style: solid;
+		   		border-width: 2px;
+		   		border-color: #c6e2ff;
+	}
+	#post-body-details{
+				padding-left: 25px;
+				border-radius: 20px;
+		   		border-style: solid;
+		   		border-width: 2px;
+		   		border-color: #c6e2ff;
+	}
+	#post-head{
+		margin-top: 10px;
+		font-size: 32px;
+		font-style: italic;
+		font-family:Work Sans;
+	}
+	#post-facility{
+		margin-top: 10px;
+		font-size: 24px;
+		font-style: bold;
+		font-family:Work Sans;
+	}
+	#post-short-description{
+		margin-top: 10px;
+		font-size: 14px;
+		font-family:Work Sans;
+		padding-right: 25px;
+		word-wrap: break-word;
+	}
+	#post-view-more-details{
+		float: right;
+		margin-top: 5px;
+		margin-right: 10px;
+	}

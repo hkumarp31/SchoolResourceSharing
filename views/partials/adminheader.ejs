@@ -1,0 +1,30 @@
+<div id="header" class="container-fluid">
+			<div id="homePageHead" class="row">
+					<div id="headWebTitle" class="col">
+						<h1 id="head1">Resource</h1>
+						<h1 id="head2">Sharing</h1>
+					</div>
+					<div id="headWebTitle" class="col">
+						<h1 id="head1">ADMIN DASHBOARD</h1>
+					</div>
+					<div id="enterRegister" class="col">
+					<% if(currentUser){ %>
+						<a href="#" id="loggedin" ><%= currentUser.username%></a>
+						<a href="/logout" class="btn btn-primary" id="loggedin">Logout</a>
+					<% } %>
+						<button id="loggedin">VIEW PROFILE</button>
+						<button id="register">EDIT PROFILE</button>
+					</div>
+			</div>
+			<br>
+			<div class="row" id="Nav">
+					<ul>
+						<li><a href="/">HOME</a></li>
+						<li><a href="/admin/new">ADD NEW POST</a></li>
+						<li><a href="/admin/post">VIEW ALL POSTS</a></li>
+						<li><a href="/admin/booking">BOOKING</a></li>
+						<li>NOTICE</li>
+						<li><a href="/admin/message">MESSAGES</a></li>
+					</ul>
+			</div>
+		</div>
